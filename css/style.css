@@ -1,0 +1,29 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+
+/* header */
+#headerlogo
+{
+    margin-top:0;
+    height:20vh;
+    display:block;
+}
+
+header
+{
+    background-color:#FF6029;
+}
+
+/* Section */
+td
+{
+    color:black;
+}
+
+strong
+{
+    color:#2199e8;
+}
