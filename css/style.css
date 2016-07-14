@@ -1,7 +1,20 @@
+/* Font face */
+
+@font-face {
+    font-family: 'ca';
+    src: url('../fonts/cabndweb-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cabndweb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body */
+
 body
 {
-    margin:0;
+    margin:0 auto;
     padding:0;
+    max-width:1100px;
 }
 
 /* header */
@@ -9,21 +22,58 @@ body
 {
     margin-top:0;
     height:20vh;
-    display:block;
+    padding:0px;    
+}
+
+.headertxt
+{
+    padding: 0 6px 0 0;
+    color:white;
+    font-weight:bold;
+    font-size:7vh;
+    line-height:7vh;
+    font-family:ca;
+    align-self:center;
 }
 
 header
 {
-    background-color:#FF6029;
+    width:100%;
+    display:flex;
+    background-color:#F06528;
+    justify-content:space-between;
 }
 
 /* Section */
-td
+td, th
 {
     color:black;
+    font-size:1.5em;
 }
 
 strong
 {
     color:#2199e8;
+}
+
+.accordion-title::before
+		      {
+			  display:none;
+		      }
+.accordion-title
+{
+    font-family:ca;
+    height:110px;
+    font-size:35px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:340px)
+{
+    .headertxt
+    {
+	font-size:6vh;
+    }
 }
